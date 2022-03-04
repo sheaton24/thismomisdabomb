@@ -1,41 +1,85 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
+</head>
+<body>
 
-  <!-- We are importing our css styles here -->
-  <link rel="stylesheet" href="style.css">
-  <!-- We are setting the tab icon here -->
-  <link rel="icon" href="assets/tech-moms-logo-2021.PNG" type="image/x-icon">
-  <!-- We are importing icons here -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-  <!-- We are importing google fonts here -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <header>
 
-<style> 
-body {
-  background-image: url("background.jpg");
+    <div class="container">            
+      <nav class="nav_checkbox">
+                <a href="#" class="title animate__animated animate__bounce"><h2>LUCIANA HEATON</h2></a>
+                <input type="checkbox" id="tab-nav" class="tab-nav">
+                <label for="tab-nav" class="label">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                </label>
+                <ul class="content_nav">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">DANCE COMP & STATS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <div class="navbarborder"></div>
+                
+                </ul>
+            </nav>
+        </div>
+    </header>
   
 
+    <div class="movie-container">
+      <video onclick="play(event)" src="wikkedvid.mp4" width="650px" height="650px" id="video"></video>
+      <div class="controls">
+          <button onclick="play(event)"><i class="fa fa-play"></i><i class="fa fa-pause"></i></button>
+          <button onclick="rewind(event)"><i class="fa fa-fast-backward"></i></button>
+          <div class="timeline">
+              <div class="bar">
+                  <div class="inner"></div>
+              </div>
+          </div>
+          <button onclick="forward(event)"><i class="fa fa-fast-forward"></i></button>
+          <button onclick="fullScreen(event)"><i class="fa fa-expand"></i></button>
+          <button onclick="download(event)"><i class="fa fa-cloud-download"></i></button>
+      </div>
+  </div>
+<h1>About Me</h1>
+<div></div>
 
-</style>
-</head>
-<style>
-    h1{
-        text-align: center;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color: black;
-        color: pink; 
-      padding: 100px;
-      }  
-    }
 
-</style>
-<body>
- <h1>Luciana Heaton
-    </h1>
-    <p></p>
+  
+
+    
+  
+<div class="aboutstuff">
+    
+  <P>ABOUT ME</P>
+         <p>My name is Luciauna (Luci) Heaton, and I am 9 years old.
+             I have been dancing for almost my whole life (6 years to be exact)! My mom
+             took me to see the production of Thriller by Odyssey Dance Company here in
+             my home state of Utah, when I was the age of 3. That was the day I knew I wanted
+             to be a dancer!
+               My mom then enrolled me into rec classes at Elite Academy, to see if I enjoyed
+               dancing and being on stage. I didn't just enjoy it; I LOVED it, and knew I wanted
+               learn more about dancing. My coaches encouraged me to try-out for a Competition Team
+               the following year, and so thats what I did. I was so excited to find out that I made the
+               team, and I have been dancing Competition ever since.
+ 
+           Dance has given me so many wonderful things. I made the very best friends here, who became
+           my dance sisters; they became a part of my family. Dance has given me strength and confidence.
+           There is nothing I love more than being at my studio with my dance sisters or performing on stage!
+         </p>
+    </div>  
+
+   
+    
 </body>
-</html>
 
+
+</html>
