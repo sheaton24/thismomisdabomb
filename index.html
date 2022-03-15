@@ -1,85 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head class="main-header">
+  <title>Luciauna Heaton Competition Dance</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menu.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
+<link rel="stylesheet"  href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+>
 </head>
 <body>
 
   <header>
-
-    <div class="container">            
-      <nav class="nav_checkbox">
-                <a href="#" class="title animate__animated animate__bounce"><h2>LUCIANA HEATON</h2></a>
-                <input type="checkbox" id="tab-nav" class="tab-nav">
-                <label for="tab-nav" class="label">
-                    <div class="burger"></div>
-                    <div class="burger"></div>
-                    <div class="burger"></div>
-                </label>
-                <ul class="content_nav">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">DANCE COMP & STATS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <div class="navbarborder"></div>
-                
-                </ul>
-            </nav>
+    
+   <div>
+     
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="animate-charcter"> Luciauna Heaton</h2>
         </div>
-    </header>
-  
-
-    <div class="movie-container">
-      <video onclick="play(event)" src="wikkedvid.mp4" width="650px" height="650px" id="video"></video>
-      <div class="controls">
-          <button onclick="play(event)"><i class="fa fa-play"></i><i class="fa fa-pause"></i></button>
-          <button onclick="rewind(event)"><i class="fa fa-fast-backward"></i></button>
-          <div class="timeline">
-              <div class="bar">
-                  <div class="inner"></div>
-              </div>
-          </div>
-          <button onclick="forward(event)"><i class="fa fa-fast-forward"></i></button>
-          <button onclick="fullScreen(event)"><i class="fa fa-expand"></i></button>
-          <button onclick="download(event)"><i class="fa fa-cloud-download"></i></button>
       </div>
+    </div>
+    <div class="page">
+      <nav class="page__menu menu">
+        <ul class="menu__list r-list">
+          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Home</a></li>
+          <li class="menu__group"><a href="#aboutstuff" class="menu__link r-link text-underlined">About</a></li>
+          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Dance Comps & Stats</a></li>
+          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="footer-icons">
+        
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-tiktok"></i></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+     
+
   </div>
-<h1>About Me</h1>
-<div></div>
+
+</div>
 
 
+    <div id="logo"> 
+      <img src="imageedit_20_4580819157.jpg"> 
+    </div>
+       
+    </header>
+
+<section class="content-section stats-container">
+
+      <h2 class="section-header-dance">Dance Competitions and Stats</h2>
+      <div>
+        <span>
+          <strong>Motion Tour 2021 </strong>
+          5th place
+        </div>
+        <span> <strong> Dance America 2021 </strong>
+          1st Place High point
+        <span> 
+        <div>  <strong>  Celebrity Dance Competition 2021 </strong>
+          1st Place High Gold
+         
+
+        </div>
+
+      </div>
+    </section>
   
+<section>
+    <div class="movie-container">
+      <figure id="videoContainer" data-fullscreen="false">
+        <video  loop id="video" controls autoplay  loop preload="metadata">
+          <source src="wikkedvid.mp4" type="video/mp4">
+          <source src="alittleparty.mp4" type="video/mp4">
+          <source src="jetset.mp4" type="video/mp4">
+          <source src="standbyme.mp4" type="video/mp4">
+          <source src="thehop.mp4" type="video/mp4">
+          <source src="mickey.mp4" type="video/mp4">
 
-    
+          
+          <!-- Flash fallback -->
+          <object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.mp4" width="500" height="200">
+            <param name="movie" value="flash-player.swf?videoUrl=http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.mp4" />
+            <param name="allowfullscreen" value="true" />
+            <param name="wmode" value="transparent" />
+            <param name="flashvars" value="controlbar=over&amp;image=img/poster.jpg&amp;file=flash-player.swf?http://iandevlin.github.io/mdn/video-player/videoUrl=video/tears-of-steel-battle-clip-medium.mp4" />
+            <img alt="Tears of Steel poster image" src="img/poster.jpg" width="1024" height="428" title="No video playback possible, please download the video from the link below" />
+          </object>
+          <!-- Offer download -->
+          <a href="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.mp4">Download MP4</a>
+        </video>
+        <div id="video-controls" class="controls" data-state="hidden">
+          <button id="playpause" type="button" data-state="play">Play/Pause</button>
+          <button id="stop" type="button" data-state="stop">Stop</button>
+          <div class="progress">
+            <progress id="progress" value="0" min="0">
+              <span id="progress-bar"></span>
+            </progress>
+          </div>
+          <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+          <button id="volinc" type="button" data-state="volup">Vol+</button>
+          <button id="voldec" type="button" data-state="voldown">Vol-</button>
+          <button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
+        </div>
   
-<div class="aboutstuff">
-    
-  <P>ABOUT ME</P>
-         <p>My name is Luciauna (Luci) Heaton, and I am 9 years old.
-             I have been dancing for almost my whole life (6 years to be exact)! My mom
-             took me to see the production of Thriller by Odyssey Dance Company here in
-             my home state of Utah, when I was the age of 3. That was the day I knew I wanted
-             to be a dancer!
-               My mom then enrolled me into rec classes at Elite Academy, to see if I enjoyed
-               dancing and being on stage. I didn't just enjoy it; I LOVED it, and knew I wanted
-               learn more about dancing. My coaches encouraged me to try-out for a Competition Team
-               the following year, and so thats what I did. I was so excited to find out that I made the
-               team, and I have been dancing Competition ever since.
- 
-           Dance has given me so many wonderful things. I made the very best friends here, who became
-           my dance sisters; they became a part of my family. Dance has given me strength and confidence.
-           There is nothing I love more than being at my studio with my dance sisters or performing on stage!
-         </p>
-    </div>  
+      </figure>
+      <script src="js/video-player.js"></script>
+      <script>
+function nextVideo() {
+    // get the element
+    videoPlayer = document.getElementById("play-video")
+    // remove the event listener, if there is one
+    videoPlayer.removeEventListener('ended',nextVideo,false);
 
+    // update the source with the currentVideo from the videos array
+    videoPlayer.src = videos[currentVideo];
+    // play the video
+    videoPlayer.play()
+
+    // increment the currentVideo, looping at the end of the array
+    currentVideo = (currentVideo + 1) % videos.length
+
+    // add an event listener so when the video ends it will call the nextVideo function again
+    videoPlayer.addEventListener('ended', nextVideo,false);
+}
+
+function ooops() {
+    console.log("Error: " + document.getElementById("play-video").error.code)
+}
+
+      </script>
+          
+        </div>
+      </div>
+
+
+      <h2 class="section-header-dance">Dance Competitions and Stats</h2>
+      <div>
+        <span>
+          <strong>Motion Tour 2021 </strong>
+          5th place
+        </div>
+        <span> <strong> Dance America 2021 </strong>
+          1st Place High point
+        <span> 
+        <div>  <strong>  Celebrity Dance Competition 2021 </strong>
+          1st Place High Gold
+         
+
+        </div>
+
+      </div>
+
+  </section>
+
+  <a href="https://www.eliteacademy.us/" target="_blank"></a>
+      
+  <a href="https://wasatchtt.com/" target="_blank"></a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section>
    
+  <div class="aboutstuff">
+    <h3 class="container-about">ABOUT ME</h3>
+
+     <div class="slidercontainer">  
+      <div class="showSlide fade">  
+          <img src="img/IMG-9048.jpg" />  
+          <div class="content">Jr Xtreme 2021-2022</div>  
+      </div>  
+      <div class="showSlide fade">  
+          <img src="img/IMG-6714.jpg"/>  
+          <div class="content">Celebrity Dance Comp 2021</div>  
+      </div>  
+
+      <div class="showSlide fade">  
+          <img src="img/IMG-7121.jpeg"/>  
+          <div class="content">Jr Xtreme 2021-2022/div>  
+      </div>  
+      <div class="showSlide fade">  
+          <img src="img/IMG-8798.jpg"/>  
+          <div class="content">Luci Heaton 2021</div>  
+      </div>  
+      <!-- Navigation arrows -->  
+      <a class="left" onclick="nextSlide(-1)">❮</a>  
+      <a class="right" onclick="nextSlide(1)">❯</a>  
+  </div>
+        
+        <p class="description">My name is Luciauna (Luci) Heaton, and I am 9 years old. I have been training at 
+          <a href="https://www.eliteacademy.us/" target="_blank"><strong> Elite Academy</strong></a> in 
+          all different styles of dance; Ballet, Jazz, Hip Hop and lyrical. 
+          I have been training in tumbling at <a href="https://www.eliteacademy.us/" target="_blank"><strong>Elite Academy</strong></a> 
+          for 3 years and at <a href="https://wasatchtt.com/" target="_blank"> <strong>Wasatch Trampoline</strong></a> 
+          and Tumbling for 1 year. I have three things in my life that I am passionate 
+          about; my family, my friends and Dance!
+           My mom took me to see the production of Thriller by Odyssey Dance Company here in
+          my home state of Utah, when I was the age of 3. That was the day I knew I wanted
+          to be a dancer!
+                     My mom then enrolled me into rec classes at Elite Academy, to see if I enjoyed
+                     dancing and being on stage. I didn't just enjoy it; I LOVED it, and knew I wanted
+                     to learn more about dancing. My coaches encouraged me to try-out for a Competition Team
+                     the following year, and so thats what I did. I was so excited to find out that I made the
+                     team, and I have been dancing Competition ever since.
+       
+                 Dance has given me so many wonderful things. I made the very best friends here, who became
+                 my dance sisters; they became a part of my family. Dance has given me strength and confidence.
+                 There is nothing I love more than being at my studio with my dance sisters or performing on stage!
+               </p>
+        
+        
+    </div>  
+     
+
+
+<script type="text/javascript">  
+  var slide_index = 1;  
+  displaySlides(slide_index);  
+
+  function nextSlide(n) {  
+      displaySlides(slide_index += n);  
+  }  
+
+  function currentSlide(n) {  
+      displaySlides(slide_index = n);  
+  }  
+
+  function displaySlides(n) {  
+      var i;  
+      var slides = document.getElementsByClassName("showSlide");  
+      if (n > slides.length) { slide_index = 1 }  
+      if (n < 1) { slide_index = slides.length }  
+      for (i = 0; i < slides.length; i++) {  
+          slides[i].style.display = "none";  
+      }  
+      slides[slide_index - 1].style.display = "block";  
+  }  
+</script>
+
+        <footer class="footer-distributed">
+        
+                    <div class="footer-left">
+        
+                        <h3>Luciauna  <span> Heaton </span></h3>
+        
+                        <p class="footer-links">
+                            <a href="#" class="link-1">Home</a>
+                            
+                            <a href="#">Blog</a>
+                        
+                            <a href="#">About</a>
+                        </p>
+        
+                       
+                    </div>
+        
+                    <div class="footer-center">
+        
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <p><span></span> Salt Lake City, Utah</p>
+                        </div>
+        
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <p>801.633.4737</p>
+                        </div>
+        
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="sarahhivibe@gmail.com">sarahhivibe@gmail.com</a></p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="footer-right">
+        
+                        <p class="footer-company-about">
+                            <span>Sponsership Inqueries</span>
+                            Want me to show off your amazing clothes, dancewear, and gear?
+                            You can reach out to my team on via social media, phone and email!
+                        </p>
+        
+                        <div class="footer-icons">
+        
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-tiktok"></i></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                           
+        
+                        </div>
+        
+                    </div>
+        
+                </footer>
     
-</body>
 
 
 </html>
